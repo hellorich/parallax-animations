@@ -1,0 +1,36 @@
+//
+// Animation
+// ---------------------------------------------------------------------------------
+
+.animation {
+  @include clearfix;
+  @include size(100% 100vh);
+  background-color: #FFC107;
+  padding: em(48) em(64);
+
+  .animation-captions {
+    @include size(40% em(504));
+    background-color: #FFD54F;
+    float: left;
+    position: relative;
+  }
+
+  .animation-graphics {
+    @include size(50% em(504));
+    background-color: #FF6F00;
+    float: right;
+    position: relative;
+  }
+
+  &:nth-child(even) {
+    background-color: #FFEB3B;
+
+    .animation-captions {
+      background-color: #FFF176;
+    }
+
+    .animation-graphics {
+      background-color: #F57F17;
+    }
+  }
+}

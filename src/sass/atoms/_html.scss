@@ -1,0 +1,9 @@
+//
+// HTML
+//
+// 1. Prevent adjustments of font size after orientation changes in IE and iOS.
+// ---------------------------------------------------------------------------------
+
+html {
+  @include prefixer(text-size-adjust, 100%, ms webkit); // 1
+}
