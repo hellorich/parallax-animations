@@ -1,9 +1,7 @@
-require(['jquery', 'test'], function ($, test) {
+require(['jquery', 'parallaxController'], function ($, parallaxController) {
   
   'use strict';
-  
-  console.log('Main loaded');
 
-  test.publicMethod('Hello');
+  parallaxController.init();
 
 });
