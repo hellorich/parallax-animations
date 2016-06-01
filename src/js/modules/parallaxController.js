@@ -13,7 +13,7 @@ define('parallaxController', [
   var addToScene = function ( controller, scene, timeline ) {
 
     new ScrollMagic.Scene({
-      duration: '200%',
+      duration: '100%',
       triggerElement: scene
     })
     .setTween( timeline )
@@ -35,14 +35,12 @@ define('parallaxController', [
 
       var timeline = new TimelineMax().add([
 
-        TweenMax.from( $animationCaptions, 1, { 
-          y: '+60%', 
-          ease: Power0.easeNone 
+        TweenMax.to( $animationCaptions, 1, { 
+          y: '-30%'
         }),
 
-        TweenMax.from( $animationGraphics, 1, { 
-          y: '+30%', 
-          ease: Power0.easeNone 
+        TweenMax.to( $animationGraphics, 1, { 
+          y: '-20%'
         })
 
       ]);

@@ -4,7 +4,7 @@
 
 .animation {
   @include clearfix;
-  @include size(100% 100vh);
+  @include size(100% auto);
   background-color: #FFC107;
   padding: em(48) em(64);
 
